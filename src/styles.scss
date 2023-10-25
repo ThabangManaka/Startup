@@ -1,2 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+
+*{
+  font-family: 'Montserrat', sans-serif !important;
+}
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../src/assets/fonts/Montserrat/static/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Black';
+  src: url('../src/assets/fonts/Montserrat/static/Montserrat-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../src/assets/fonts/Montserrat/static/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-ExtraBold';
+  src: url('../src/assets/fonts/Montserrat/static/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('../src/assets/fonts/Montserrat/static/Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-ExtraLight';
+  src: url('../src/assets/fonts/Montserrat/static/Montserrat-ExtraLight.ttf');
+}
