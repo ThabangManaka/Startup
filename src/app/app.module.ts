@@ -10,6 +10,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
 import { ContactCardComponent } from './shared/contact-card/contact-card.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FeaturedServicesComponent } from './shared/featured-services/featured-services.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ServicesComponent,
     ContactUsComponent,
     HomeComponent,
-    ContactCardComponent
+    ContactCardComponent,
+    FeaturedServicesComponent
   ],
   imports: [
     BrowserModule,
