@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { ServicesComponent } from './services/services.component';
+
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
 import { ContactCardComponent } from './shared/contact-card/contact-card.component';
@@ -17,7 +17,7 @@ import { FeaturedServicesComponent } from './shared/featured-services/featured-s
     AppComponent,
     NavbarComponent,
     AboutUsComponent,
-    ServicesComponent,
+
     ContactUsComponent,
     HomeComponent,
     ContactCardComponent,
