@@ -1,0 +1,36 @@
+
+.breadcrumbs{
+  background-image: url('../../assets/imgs/page-header.jpg');
+  background-color: rgba(14, 29, 52, 0.8);
+  background-position: center;
+  background-size: cover;
+}
+.page-header {
+  padding: 140px 0 80px 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(14, 29, 52, 0.8);
+}
+.justify-content-center {
+  justify-content: center!important;
+}
+//  .page-header {
+//   padding: 140px 0 80px 0;
+//   position: relative;
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-color: rgba(14, 29, 52, 0.8);
+// }
+.breadcrumbs .page-header h2 {
+  font-size: 56px;
+  font-weight: 500;
+  color: #fff;
+
+}
+
+.breadcrumbs .page-header p {
+  color: rgba(255, 255, 255, 0.8);
+}
