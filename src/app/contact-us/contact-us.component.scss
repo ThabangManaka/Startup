@@ -1,4 +1,6 @@
-
+.content-area {
+  padding: 30px 20px !important;
+}
 .breadcrumbs{
   background-image: url('../../assets/imgs/page-header.jpg');
   background-color: rgba(14, 29, 52, 0.8);
@@ -13,9 +15,7 @@
   background-repeat: no-repeat;
   background-color: rgba(14, 29, 52, 0.8);
 }
-.justify-content-center {
-  justify-content: center!important;
-}
+
 //  .page-header {
 //   padding: 140px 0 80px 0;
 //   position: relative;
@@ -34,3 +34,57 @@
 .breadcrumbs .page-header p {
   color: rgba(255, 255, 255, 0.8);
 }
+
+
+.contact .info-item fa-icon {
+  font-size: 28px;
+  //background: #F79034;
+  color: #F79034;
+  width: 44px;
+  height: 44px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  //margin-right: 15px;
+}
+.contact .info-item h4 {
+  padding: 0;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: var(--color-secondary);
+}
+.contact .info-item p {
+  padding: 0;
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgba(14, 29, 52, 0.8);
+}
+.space{
+  margin-top: 35px;
+}
+.button
+ {
+  background:#F79034;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+  margin-top: 10px;
+ }
+ .google-map iframe {
+  //margin: 25px 0 0 0;
+  border: 5px solid #ddd !important;
+ height: 350px;
+ width: 100%;
+}
+h5
+ {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 15px;
+ }
