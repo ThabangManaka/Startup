@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactCardComponent } from './shared/contact-card/contact-card.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FeaturedServicesComponent } from './shared/featured-services/featured-services.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FeaturedServicesComponent } from './shared/featured-services/featured-s
     ContactUsComponent,
     HomeComponent,
     ContactCardComponent,
-    FeaturedServicesComponent
+    FeaturedServicesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
