@@ -1,0 +1,48 @@
+.call-to-action {
+  background: linear-gradient(rgba(14, 29, 52, 0.6),
+   rgba(14, 29, 52, 0.8)), url('../../../assets/imgs/cta-bg.jpg') center center;
+  background-size: cover;
+  padding: 100px 0;
+}
+h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+p {
+  color: #fff;
+}
+.cta-btn {
+
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  background-color: #F79034;
+  text-decoration: none;
+  color: #fff;
+}
+
+.cta-btn  :hover {
+  background-color: #F79034;
+  color: #fff;
+}
+.cta-btn-phone {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+
+  text-decoration: none;
+  color: #FFF;
+}
