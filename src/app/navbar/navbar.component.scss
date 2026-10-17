@@ -8,3 +8,21 @@
   font-weight: 400;
   color: #fff;
 }
+
+.startup-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  display: block;
+}
+
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.startup-logo:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
