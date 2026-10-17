@@ -1,47 +1,33 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-  <div class="container ">
 
-<a class="navbar-brand" routerLink="/">
-  <img
-    src="assets/imgs/Startup Rocket Monogram Logo.png"
-    alt="Startup logo"
-    class="startup-logo"
+<nav class="navbar">
+  <a class="navbar-brand" routerLink="/" aria-label="Startup home">
+    <img
+      src="assets/imgs/Startup Rocket Monogram Logo.png"
+      alt="Startup logo"
+      class="startup-logo"
+    />
+    <span class="brand-name">Startup</span>
+  </a>
+
+  <input
+    type="checkbox"
+    id="navbar-toggle"
+    class="navbar-toggle"
+    aria-label="Toggle navigation"
   />
-</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
+  <label for="navbar-toggle" class="navbar-toggle-label">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-      <ul class="navbar-nav custom-navbar-list">
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"  routerLink="/contact-us">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="service">Services</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/contact-us">Contact-Us</a>
-        </li>
-
-      </ul>
-
-    </div>
+  <div class="navbar-links">
+    <a routerLink="/" routerLinkActive="active"
+       [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a routerLink="/services" routerLinkActive="active">Services</a>
+    <a routerLink="/about" routerLinkActive="active">About</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    <a routerLink="/contact" class="nav-cta">Get Started</a>
   </div>
 </nav>

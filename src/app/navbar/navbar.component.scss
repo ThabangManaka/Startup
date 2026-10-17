@@ -1,28 +1,144 @@
-.custom-justify-content-between {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.custom-navbar-list{
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
+
+:host {
+  display: block;
 }
 
-.startup-logo {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  display: block;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 12px 6%;
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  position: relative;
+  z-index: 1000;
 }
 
 .navbar-brand {
   display: inline-flex;
   align-items: center;
-  padding: 5px 10px;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
 }
 
-.startup-logo:hover {
-  transform: scale(1.05);
-  transition: transform 0.2s ease-in-out;
+.startup-logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.navbar-brand:hover .startup-logo {
+  transform: scale(1.06);
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #202433;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: #f97316;
+}
+
+.navbar-links a.nav-cta {
+  padding: 11px 20px;
+  background: #f97316;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.navbar-links a.nav-cta:hover {
+  background: #ea580c;
+}
+
+.navbar-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.navbar-toggle-label {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+}
+
+.navbar-toggle-label span {
+  width: 25px;
+  height: 3px;
+  border-radius: 3px;
+  background: #202433;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 10px 5%;
+  }
+
+  .startup-logo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .brand-name {
+    font-size: 1.3rem;
+  }
+
+  .navbar-toggle-label {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+    padding: 8px 0 12px;
+  }
+
+  .navbar-links a {
+    padding: 13px 8px;
+  }
+
+  .navbar-links a.nav-cta {
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .navbar-toggle:checked ~ .navbar-links {
+    display: flex;
+  }
+
+  .navbar-toggle:focus-visible ~ .navbar-toggle-label {
+    outline: 2px solid #f97316;
+    outline-offset: 4px;
+  }
 }
