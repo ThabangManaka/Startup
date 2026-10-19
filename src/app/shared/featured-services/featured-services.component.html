@@ -1,116 +1,215 @@
 
-<section class="services-page">
-
-  <!-- Hero section -->
-  <header class="services-hero">
-    <div class="container">
-      <span class="section-label">WHAT WE DO</span>
-
-      <h1>Technology Solutions for a Smarter Business</h1>
-
-      <p>
-        We help businesses work smarter, innovate faster, and grow
-        through AI, software development, and modern IT solutions.
-      </p>
-
-      <a routerLink="/contact-us" class="services-cta">
-        Discuss Your Project <span>→</span>
-      </a>
+<section class="services-section">
+  <!-- Services Header -->
+  <div class="breadcrumbs">
+    <div class="page-header d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <span class="section-label">WHAT WE DO</span>
+            <h2>Technology That Moves Your Business Forward</h2>
+            <p>
+              From AI-powered automation to custom software, we help
+              businesses solve problems, work smarter, and grow through
+              practical technology solutions.
+            </p>
+            <a routerLink="/contact-us" class="services-cta">
+              Discuss Your Project <span>→</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
+  </div>
 
-  <!-- Services section -->
-  <section class="services-content">
+  <!-- Services Cards -->
+  <div id="service" class="services">
     <div class="container">
-
-      <div class="section-heading">
+      <div class="section-header text-center">
         <span class="section-label">OUR EXPERTISE</span>
-        <h2>Solutions Built Around Your Business</h2>
+        <h2>Solutions Built Around Your Needs</h2>
         <p>
-          Practical technology services designed to solve challenges
-          and create new opportunities for your organisation.
+          Explore our services and discover how we can support your
+          business with reliable, modern technology.
         </p>
       </div>
 
-      <div class="row g-4">
-
-        <div class="col-lg-3 col-md-6">
+      <div class="row gy-4">
+        <!-- AI & Automation -->
+        <div class="col-lg-4 col-md-6">
           <article class="service-card">
-            <div class="service-icon">
-              <i class="bi bi-robot"></i>
+            <div class="card-img">
+              <img
+                src="assets/imgs/business_intelligence.png"
+                alt="AI and business automation solutions"
+                class="img-fluid"
+                loading="lazy">
             </div>
-            <h3>AI Solutions</h3>
-            <p>
-              Explore AI-powered tools, intelligent automation, and
-              smarter workflows that help your business save time.
-            </p>
-            <a routerLink="/contact-us" class="service-link">
-              Explore solutions <span>→</span>
-            </a>
+            <div class="card-content">
+              <span class="service-number">01</span>
+              <h3>AI &amp; Automation</h3>
+              <p>
+                Streamline repetitive tasks, improve workflows, and
+                explore practical AI solutions that help your team
+                focus on higher-value work.
+              </p>
+              <a routerLink="/contact-us" class="service-link">
+                Explore this service <span>→</span>
+              </a>
+            </div>
           </article>
         </div>
 
-        <div class="col-lg-3 col-md-6">
+        <!-- Software Development -->
+        <div class="col-lg-4 col-md-6">
           <article class="service-card">
-            <div class="service-icon">
-              <i class="bi bi-code-slash"></i>
+            <div class="card-img">
+              <img
+                src="assets/imgs/software_dev.png"
+                alt="Custom software development"
+                class="img-fluid"
+                loading="lazy">
             </div>
-            <h3>Software Development</h3>
-            <p>
-              Build modern websites, web applications, and software
-              tailored to your business requirements.
-            </p>
-            <a routerLink="/contact-us" class="service-link">
-              Build with us <span>→</span>
-            </a>
+            <div class="card-content">
+              <span class="service-number">02</span>
+              <h3>Software Development</h3>
+              <p>
+                Build custom software tailored to your business
+                processes, from internal tools to larger business
+                applications.
+              </p>
+              <a routerLink="/contact-us" class="service-link">
+                Explore this service <span>→</span>
+              </a>
+            </div>
           </article>
         </div>
 
-        <div class="col-lg-3 col-md-6">
+        <!-- Mobile Applications -->
+        <div class="col-lg-4 col-md-6">
           <article class="service-card">
-            <div class="service-icon">
-              <i class="bi bi-cloud-check"></i>
+            <div class="card-img">
+              <img
+                src="assets/imgs/mobile_app.png"
+                alt="Mobile application development"
+                class="img-fluid"
+                loading="lazy">
             </div>
-            <h3>IT Consulting</h3>
-            <p>
-              Get guidance on technology choices, system improvements,
-              integration, and digital transformation.
-            </p>
-            <a routerLink="/contact-us" class="service-link">
-              Get expert advice <span>→</span>
-            </a>
+            <div class="card-content">
+              <span class="service-number">03</span>
+              <h3>Mobile App Development</h3>
+              <p>
+                Create user-friendly mobile applications that help
+                customers access your services and stay connected
+                with your business.
+              </p>
+              <a routerLink="/contact-us" class="service-link">
+                Explore this service <span>→</span>
+              </a>
+            </div>
           </article>
         </div>
 
-        <div class="col-lg-3 col-md-6">
+        <!-- Business Intelligence -->
+        <div class="col-lg-4 col-md-6">
           <article class="service-card">
-            <div class="service-icon">
-              <i class="bi bi-graph-up-arrow"></i>
+            <div class="card-img">
+              <img
+                src="assets/imgs/business_intelligence.png"
+                alt="Business intelligence and data analytics"
+                class="img-fluid"
+                loading="lazy">
             </div>
-            <h3>Business Technology</h3>
-            <p>
-              Connect your systems and improve business processes
-              with technology that supports your goals.
-            </p>
-            <a routerLink="/contact-us" class="service-link">
-              Grow your business <span>→</span>
-            </a>
+            <div class="card-content">
+              <span class="service-number">04</span>
+              <h3>Business Intelligence</h3>
+              <p>
+                Turn business data into useful insights with
+                reporting, analytics, and dashboards that support
+                better-informed decisions.
+              </p>
+              <a routerLink="/contact-us" class="service-link">
+                Explore this service <span>→</span>
+              </a>
+            </div>
           </article>
         </div>
 
+        <!-- Database Development -->
+        <div class="col-lg-4 col-md-6">
+          <article class="service-card">
+            <div class="card-img">
+              <img
+                src="assets/imgs/database.png"
+                alt="Database design and development"
+                class="img-fluid"
+                loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="service-number">05</span>
+              <h3>Database Development</h3>
+              <p>
+                Design and organise reliable data solutions to
+                support your applications, reporting, and everyday
+                business operations.
+              </p>
+              <a routerLink="/contact-us" class="service-link">
+                Explore this service <span>→</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Web Applications -->
+        <div class="col-lg-4 col-md-6">
+          <article class="service-card">
+            <div class="card-img">
+              <img
+                src="assets/imgs/web_app.png"
+                alt="Web application development"
+                class="img-fluid"
+                loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="service-number">06</span>
+              <h3>Web App Development</h3>
+              <p>
+                Develop responsive web applications that make
+                services easier to access and help simplify
+                customer and staff experiences.
+              </p>
+              <a routerLink="/contact-us" class="service-link">
+                Explore this service <span>→</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Consulting -->
+        <div class="col-lg-4 col-md-6">
+          <article class="service-card">
+            <div class="card-img">
+              <img
+                src="assets/imgs/consulting.png"
+                alt="Software development and IT consulting"
+                class="img-fluid"
+                loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="service-number">07</span>
+              <h3>IT &amp; Software Consulting</h3>
+              <p>
+                Get practical guidance on technology choices,
+                application architecture, integrations, and
+                improving existing business systems.
+              </p>
+              <a routerLink="/contact-us" class="service-link">
+                Explore this service <span>→</span>
+              </a>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
-  </section>
-
-  <!-- Call to action -->
-  <section class="services-bottom">
-    <div class="container">
-      <h2>Have a project in mind?</h2>
-      <p>Let's explore how technology can move your business forward.</p>
-      <a routerLink="/contact-us" class="services-cta">
-        Contact Startup <span>→</span>
-      </a>
-    </div>
-  </section>
-
+  </div>
 </section>
