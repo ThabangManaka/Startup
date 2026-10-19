@@ -12,6 +12,7 @@ import { ContactCardComponent } from './shared/contact-card/contact-card.compone
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FeaturedServicesComponent } from './shared/featured-services/featured-services.component';
 import { FooterComponent } from './footer/footer.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     ContactCardComponent,
     FeaturedServicesComponent,
-    FooterComponent
+    FooterComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
