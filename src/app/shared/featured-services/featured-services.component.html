@@ -1,43 +1,116 @@
-<div class="featured-services">
-  <div class="container content-area">
-    <div class="row gy-4">
-    <div class="col-lg-3 service-item d-flex">
-     <div class="icon flex-shrink-0">
-      <fa-icon [icon]="faPeopleRoof"></fa-icon>
-     </div>
-      <div>
-      <p class="description" >
-        Get access to our team of graphic designers and programmers</p>
-      </div>
-    </div>
-    <div class="col-lg-3 service-item d-flex">
-      <div class="icon flex-shrink-0">
-       <fa-icon [icon]="faHandshakeSimple "></fa-icon>
-      </div>
-       <div>
-       <p class="description">
-        Invest in a modular turnkey solution. From inception to production to future enhancements</p>
-       </div>
-     </div>
-     <div class="col-lg-3 service-item d-flex">
-      <div class="icon flex-shrink-0">
-       <fa-icon [icon]="faCalendarMinus"></fa-icon>
-      </div>
-       <div>
-       <p class="description">
-        Apps, Web, IoT, APIs, AI, Computer Vision, Machine Interfacing, RS232, Database Programming and more</p>
-       </div>
-     </div>
-     <div class="col-lg-3 service-item d-flex">
-      <div class="icon flex-shrink-0">
-       <fa-icon [icon]="faComments"></fa-icon>
-      </div>
-       <div>
-       <p class="description">
-        New clients get a 100% free consultation to discuss their projects</p>
-       </div>
-     </div>
-    </div>
 
-  </div>
-</div>
+<section class="services-page">
+
+  <!-- Hero section -->
+  <header class="services-hero">
+    <div class="container">
+      <span class="section-label">WHAT WE DO</span>
+
+      <h1>Technology Solutions for a Smarter Business</h1>
+
+      <p>
+        We help businesses work smarter, innovate faster, and grow
+        through AI, software development, and modern IT solutions.
+      </p>
+
+      <a routerLink="/contact-us" class="services-cta">
+        Discuss Your Project <span>→</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Services section -->
+  <section class="services-content">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="section-label">OUR EXPERTISE</span>
+        <h2>Solutions Built Around Your Business</h2>
+        <p>
+          Practical technology services designed to solve challenges
+          and create new opportunities for your organisation.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-lg-3 col-md-6">
+          <article class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-robot"></i>
+            </div>
+            <h3>AI Solutions</h3>
+            <p>
+              Explore AI-powered tools, intelligent automation, and
+              smarter workflows that help your business save time.
+            </p>
+            <a routerLink="/contact-us" class="service-link">
+              Explore solutions <span>→</span>
+            </a>
+          </article>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <article class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <h3>Software Development</h3>
+            <p>
+              Build modern websites, web applications, and software
+              tailored to your business requirements.
+            </p>
+            <a routerLink="/contact-us" class="service-link">
+              Build with us <span>→</span>
+            </a>
+          </article>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <article class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-cloud-check"></i>
+            </div>
+            <h3>IT Consulting</h3>
+            <p>
+              Get guidance on technology choices, system improvements,
+              integration, and digital transformation.
+            </p>
+            <a routerLink="/contact-us" class="service-link">
+              Get expert advice <span>→</span>
+            </a>
+          </article>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <article class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <h3>Business Technology</h3>
+            <p>
+              Connect your systems and improve business processes
+              with technology that supports your goals.
+            </p>
+            <a routerLink="/contact-us" class="service-link">
+              Grow your business <span>→</span>
+            </a>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to action -->
+  <section class="services-bottom">
+    <div class="container">
+      <h2>Have a project in mind?</h2>
+      <p>Let's explore how technology can move your business forward.</p>
+      <a routerLink="/contact-us" class="services-cta">
+        Contact Startup <span>→</span>
+      </a>
+    </div>
+  </section>
+
+</section>
