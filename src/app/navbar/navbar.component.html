@@ -22,13 +22,12 @@
     <span></span>
   </label>
 
-  <div class="navbar-links">
-    <a routerLink="/" routerLinkActive="active"
-       [routerLinkActiveOptions]="{ exact: true }">Home</a>
-    <a routerLink="/services" routerLinkActive="active">Services</a>
-    <a routerLink="/about" routerLinkActive="active">About</a>
-    <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
-    <a routerLink="/contact" routerLinkActive="active">Contact</a>
-    <a routerLink="/contact" class="nav-cta">Get Started</a>
-  </div>
+<div class="navbar-links">
+  <a routerLink="/" fragment="home">Home</a>
+  <a routerLink="/" fragment="featured-services">Services</a>
+  <a routerLink="/" fragment="about-us">About Us</a>
+  <a routerLink="/portfolio">Portfolio</a>
+  <a routerLink="/" fragment="contact">Contact</a>
+  <a routerLink="/" fragment="contact" class="nav-cta">Get Started</a>
+</div>
 </nav>
