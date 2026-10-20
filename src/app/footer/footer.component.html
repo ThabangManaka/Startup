@@ -1,1 +1,70 @@
-<p>footer works!</p>
+
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-container footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a routerLink="/" class="footer-logo" aria-label="Startup home">
+          <img
+            src="assets/imgs/Startup Rocket Monogram Logo.png"
+            alt="Startup logo"
+          />
+          <span>Startup</span>
+        </a>
+
+        <p>
+          We help businesses move forward through innovative software,
+          AI-powered solutions, and reliable IT services.
+        </p>
+
+        <a routerLink="/contact-us" class="footer-cta">
+          Let's work together <span>→</span>
+        </a>
+      </div>
+
+      <!-- Quick links -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a routerLink="/">Home</a></li>
+          <li><a routerLink="/services">Services</a></li>
+          <li><a routerLink="/about-us">About Us</a></li>
+          <li><a routerLink="/portfolio">Portfolio</a></li>
+          <li><a routerLink="/contact-us">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-column">
+        <h3>Our Services</h3>
+        <ul>
+          <li><a routerLink="/services">AI & Automation</a></li>
+          <li><a routerLink="/services">Software Development</a></li>
+          <li><a routerLink="/services">Web Applications</a></li>
+          <li><a routerLink="/services">Mobile Applications</a></li>
+          <li><a routerLink="/services">Business Intelligence</a></li>
+          <li><a routerLink="/services">IT Consulting</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-column footer-contact">
+        <h3>Get in Touch</h3>
+        <p>Have an idea or a business challenge? Let's explore the right technology solution for you.</p>
+        <a routerLink="/contact-us" class="footer-contact-link">
+          Contact our team →
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <div class="footer-container footer-bottom-content">
+      <p>© {{ currentYear }} Startup. All rights reserved.</p>
+      <a routerLink="/" class="back-to-top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
