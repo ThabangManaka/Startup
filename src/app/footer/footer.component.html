@@ -24,16 +24,16 @@
       </div>
 
       <!-- Quick links -->
-      <div class="footer-column">
+        <div class="footer-column">
         <h3>Quick Links</h3>
         <ul>
-          <li><a routerLink="/">Home</a></li>
-          <li><a routerLink="/services">Services</a></li>
-          <li><a routerLink="/about-us">About Us</a></li>
-          <li><a routerLink="/portfolio">Portfolio</a></li>
-          <li><a routerLink="/contact-us">Contact</a></li>
+            <li><a routerLink="/" fragment="home">Home</a></li>
+            <li><a routerLink="/" fragment="featured-services">Services</a></li>
+            <li><a routerLink="/" fragment="about-us">About Us</a></li>
+            <li><a routerLink="/portfolio">Portfolio</a></li>
+            <li><a routerLink="/" fragment="contact">Contact</a></li>
         </ul>
-      </div>
+        </div>
 
       <!-- Services -->
       <div class="footer-column">
@@ -52,7 +52,7 @@
       <div class="footer-column footer-contact">
         <h3>Get in Touch</h3>
         <p>Have an idea or a business challenge? Let's explore the right technology solution for you.</p>
-        <a routerLink="/contact-us" class="footer-contact-link">
+        <a routerLink="/" class="footer-contact-link">
           Contact our team →
         </a>
       </div>
@@ -64,7 +64,9 @@
   <div class="footer-bottom">
     <div class="footer-container footer-bottom-content">
       <p>© {{ currentYear }} Startup. All rights reserved.</p>
-      <a routerLink="/" class="back-to-top">Back to top ↑</a>
+      <a href="#home" class="back-to-top">
+        Back to top <span aria-hidden="true">↑</span>
+        </a>
     </div>
   </div>
 </footer>

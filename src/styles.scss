@@ -3,6 +3,11 @@
 *{
   font-family: 'Montserrat', sans-serif !important;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
 @import "./node_modules/bootstrap/scss/bootstrap";
 
 @font-face {
