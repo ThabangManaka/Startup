@@ -266,7 +266,21 @@ textarea.form-control {
   height: 350px;
   border: 0;
 }
+.contact-robot {
+  display: block;
+  width: 100%;
+  max-width: 430px;
+  max-height: 300px;
+  object-fit: contain;
+  margin: 0 auto;
+}
 
+@media (max-width: 767.98px) {
+  .contact-robot {
+    max-width: 280px;
+    max-height: 230px;
+  }
+}
 /* Tablet */
 @media (max-width: 991.98px) {
   .contact-section {
