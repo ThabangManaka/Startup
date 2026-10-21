@@ -13,6 +13,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FeaturedServicesComponent } from './shared/featured-services/featured-services.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ChatbotComponent } from './shared/chatbot/chatbot.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     ContactCardComponent,
     FeaturedServicesComponent,
     FooterComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ChatbotComponent
   ],
   imports: [
     BrowserModule,

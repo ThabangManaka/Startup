@@ -4,25 +4,29 @@
   <!-- Page heading -->
 <!-- Contact hero -->
 <header class="page-header">
-<div class="col-lg-6 text-center">
-  <button
-    type="button"
-    class="robot-button"
-    (click)="speakWelcome()"
-    [attr.aria-label]="isSpeaking ? 'Stop robot greeting' : 'Hear robot greeting'"
-    [attr.aria-pressed]="isSpeaking"
-  >
-    <img
-      src="../../assets/imgs/AI-Powered Startup Landing Page.png"
-      alt="Startup AI robot. Click to hear a welcome message."
-      class="contact-robot"
-    />
-  </button>
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      <div class="col-lg-6">
+        <span class="contact-eyebrow">LET'S CONNECT</span>
 
-  <p class="robot-hint" aria-live="polite">
-    {{ isSpeaking ? 'Your AI assistant is speaking… Click to stop.' : 'Click the robot to hear a welcome message' }}
-  </p>
-</div>
+        <h1>Connect with Us</h1>
+
+        <p>
+          Based in South Africa and ready to work with businesses
+          around the world. Tell us about your goals, your challenges,
+          or the technology solutions you need.
+        </p>
+      </div>
+
+      <div class="col-lg-6 text-center">
+        <img
+          src="assets/imgs/Friendly Futuristic Robot Mascot.png"
+          alt="Friendly AI robot representing Startup's technology solutions"
+          class="contact-robot"
+        />
+      </div>
+    </div>
+  </div>
 </header>
 
   <!-- Contact information -->
