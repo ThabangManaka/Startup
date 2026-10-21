@@ -1,1 +1,97 @@
-<p>chatbot works!</p>
+
+<div class="chatbot">
+  <button
+    *ngIf="!isOpen"
+    class="chatbot-launcher"
+    type="button"
+    aria-label="Open Startup AI assistant"
+    (click)="toggleChat()"
+  >
+    <img
+      src="..//..//..//assets/imgs/Friendly Futuristic Robot Mascot.png"
+      alt=""
+      class="chatbot-avatar"
+    />
+    <span class="chatbot-launcher-label">Ask Startup AI</span>
+  </button>
+
+  <section
+    *ngIf="isOpen"
+    class="chatbot-window"
+    aria-label="Startup AI assistant"
+  >
+    <header class="chatbot-header">
+      <div class="chatbot-brand">
+        <img
+          src="..//..//..//assets/imgs/Friendly Futuristic Robot Mascot.png"
+          alt=""
+          class="chatbot-avatar"
+        />
+        <div>
+          <h2>Startup AI</h2>
+          <span>How can we help?</span>
+        </div>
+      </div>
+
+      <button
+        type="button"
+        class="chatbot-close"
+        aria-label="Close chatbot"
+        (click)="toggleChat()"
+      >
+        &times;
+      </button>
+    </header>
+
+    <div class="chatbot-messages" aria-live="polite">
+      <div
+        *ngFor="let item of messages"
+        class="chat-message"
+        [class.bot-message]="item.sender === 'bot'"
+        [class.user-message]="item.sender === 'user'"
+      >
+        {{ item.text }}
+      </div>
+
+      <div *ngIf="isTyping" class="chat-message bot-message">
+        Startup AI is typing...
+      </div>
+    </div>
+
+    <div class="quick-questions" *ngIf="messages.length === 1">
+      <button
+        type="button"
+        *ngFor="let question of quickQuestions"
+        (click)="askQuestion(question)"
+      >
+        {{ question }}
+      </button>
+    </div>
+
+    <form
+      class="chatbot-input"
+      (ngSubmit)="sendMessage()"
+    >
+      <input
+        type="text"
+        name="message"
+        [(ngModel)]="message"
+        placeholder="Type your question..."
+        aria-label="Your message"
+        autocomplete="off"
+        required
+      />
+
+      <button
+        type="submit"
+        [disabled]="!message.trim() || isTyping"
+      >
+        Send
+      </button>
+    </form>
+
+    <p class="chatbot-disclaimer">
+      AI responses may need verification.
+    </p>
+  </section>
+</div>
